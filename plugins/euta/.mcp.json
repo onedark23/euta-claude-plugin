@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "euta": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/scripts/mcp-launch.mjs",
+        "--engine-dir",
+        "${user_config.engine_dir}",
+        "--runs-dir",
+        "${user_config.runs_dir}",
+        "--secrets",
+        "${user_config.secrets_file}"
+      ],
+      "env": {
+        "EUTA_APP_EVENTS_URL": "${EUTA_APP_EVENTS_URL:-}",
+        "EUTA_APP_EVENTS_TOKEN": "${EUTA_APP_EVENTS_TOKEN:-}"
+      }
+    }
+  }
+}

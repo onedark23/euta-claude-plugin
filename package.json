@@ -1,0 +1,14 @@
+{
+  "name": "euta-claude-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Claude Code plugin + local marketplace for euta (End-User Test Automation)",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "validate": "claude plugin validate plugins/euta && claude plugin validate ."
+  }
+}

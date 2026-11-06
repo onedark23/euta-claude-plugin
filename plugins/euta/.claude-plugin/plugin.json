@@ -1,0 +1,31 @@
+{
+  "name": "euta",
+  "displayName": "euta — End-User Test Automation",
+  "version": "0.1.0",
+  "description": "Explore a web app like a real user, turn it into a YAML test script, run it, and analyze the results with the euta engine",
+  "author": {
+    "name": "euta"
+  },
+  "license": "UNLICENSED",
+  "keywords": ["testing", "e2e", "browser", "playwright", "mcp"],
+  "userConfig": {
+    "engine_dir": {
+      "type": "directory",
+      "title": "euta-engine folder",
+      "description": "Absolute path of the built euta-engine repository (contains packages/mcp-server/dist). Leave empty to use EUTA_ENGINE_DIR or a sibling euta-engine folder next to this plugin's repository.",
+      "default": ""
+    },
+    "runs_dir": {
+      "type": "directory",
+      "title": "Runs folder",
+      "description": "Where run evidence and index.sqlite are stored. EUTA_RUNS_DIR in the environment takes precedence. Empty = ~/.euta/runs",
+      "default": ""
+    },
+    "secrets_file": {
+      "type": "file",
+      "title": "Secrets file",
+      "description": "JSON or .env file with test credentials, kept outside any repository. EUTA_SECRETS_FILE in the environment takes precedence. Values are never shown to Claude.",
+      "default": ""
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "euta-tools",
+  "owner": {
+    "name": "euta"
+  },
+  "description": "euta (End-User Test Automation) plugins for Claude Code",
+  "plugins": [
+    {
+      "name": "euta",
+      "source": "./plugins/euta",
+      "description": "Write, run, and analyze end-user web tests with the euta engine (MCP server, skills, desktop-app hooks)",
+      "category": "testing",
+      "tags": ["testing", "e2e", "playwright", "mcp"]
+    }
+  ]
+}
